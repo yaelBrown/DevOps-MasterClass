@@ -1,0 +1,47 @@
+dev ops notes
+
+dev ops - is a cultural and behavior shift to remove silos
+
+configuration drift 
+jenkins and gitlab ci 
+
+ci - act of merging code and testing it as much as possible
+cd (delivery) - code in the main branch is deployable to production at any time
+  button you are pressing works everytime without fail, whenever you need it. 
+  all aspects of the application should be tested. 
+cd (deployment) - every change is deployed to the production environment automatically with no human intervention
+  enables faster feedback loops, and faster delivery of value
+  change is small generally small
+  usually not implemented
+ci (improvement) - aims to improve software delivery with incremental improvements
+  a/b testing is used
+
+Mean time to Change - how long does it take from the inception of a new fix, feature, or other chang to the point when it's delivered to production
+deployment frequency - how often code is released to production
+deployment lead time - how long does it take from the moment a change is approved for release to the point the change is in production
+mean time to recover - time it takes from failure to recovery
+
+A delivery time must introduce at least one change to improve a key metric in every sprint
+
+rauncher (PaaS) - 
+
+devops teacher team - coaching and mentoring should be the primary objectives of a devops specialist
+
+Delivery team autonomy - teams can work minimal external dependencies
+
+kubernetes is a google native google cloud applications
+  leading container orchestration platform
+
+rancher - is a container orchestration platform, that puts alot of emphasis in its user interface
+  cattle is native engine for rancher
+  master host model
+  comes with application catalog. 
+  service is the smallest deployment unit
+  stack is a group of services
+  host is a server running the ranhcer agent
+  environment is an isolated unit with its own stacks, services and hosts. 
+  single rancher master and host multiple environments
+
+
+
+
