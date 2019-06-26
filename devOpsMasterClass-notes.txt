@@ -38,9 +38,17 @@ rancher - is a container orchestration platform, that puts alot of emphasis in i
   comes with application catalog. 
   service is the smallest deployment unit
   stack is a group of services
-  host is a server running the ranhcer agent
+  host is a server running the rancher agent
   environment is an isolated unit with its own stacks, services and hosts. 
   single rancher master and host multiple environments
+
+ECS container service is the amazon webservices managed container orchestration platform
+  manages a fleet of ec2 virtual machines and runs containers on top of them
+    takes care of the complete lifestyle
+  ECS has an integrated Docker Hub registry called Elastic Container Registry (ECR)
+  Tasks - are defined with JSON files called Task Definitions
+  Services - management layer for tasks, defines how many replicas of a task you want to run, provides a routing layer.
+  simple task definition can run multiple containers
 
 
 
