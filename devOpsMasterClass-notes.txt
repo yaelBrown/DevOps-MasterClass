@@ -5,6 +5,8 @@ dev ops - is a cultural and behavior shift to remove silos
 configuration drift 
 jenkins and gitlab ci 
 
+username and passwords should never be installed inside the code repository.
+
 ci - act of merging code and testing it as much as possible
 cd (delivery) - code in the main branch is deployable to production at any time
   button you are pressing works everytime without fail, whenever you need it. 
@@ -49,7 +51,37 @@ ECS container service is the amazon webservices managed container orchestration 
   Tasks - are defined with JSON files called Task Definitions
   Services - management layer for tasks, defines how many replicas of a task you want to run, provides a routing layer.
   simple task definition can run multiple containers
+  ALB (application load balancer)
+  some aspects can be difficult to debug and monitor
+
+Pipelines and Automation
+  
+Jenkins is an automation server
+  most widely used automation server
+  most documentation available
+  often used for ci/ci/cd
+  runs jobs when triggered by a job
+  promotes pipelines as code
+  has jenkins files
+    jenkins files use Groovy inspired language
+    text file with a list of steps is called 'jenkins pipeline'
+  run docker inside of docker server is 'not stable'
+  Jenkins runs on docker
+  executed - is a isolated worker that can run a single jenkins job at a time. 
+  Poll SCM (Software Confirguration Management) - within the jenkins application, allows the application to occasionally pull the code pipeline. If changes are detected continues with build. 
+    pulls code from code repository
 
 
+Gitlab is a product for software delivery, code repositories, issue tracking, wiki pages, todo lists, docker registry and CI/CD pipeline automation
+  Gitlab CI is the pipeline automation component
+  supports pipelines as code, and Docker containers
+  keep commercial projects private
+  Young and lacking in documentation
 
+Rundeck is a tool for building self service run containers
+  running designing and scheduling automation workflows
+  used for building self service automation
+  can use rundeck to launch a awscli and run automation tasks
+  has complicated web interface
 
+Everything as code - define everything in your application stack as code so your complete cloud infrastucture could be torn down and built from scratch automatically at a touch of a button. 
