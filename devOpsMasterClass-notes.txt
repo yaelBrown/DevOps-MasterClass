@@ -60,7 +60,7 @@ Jenkins is an automation server
   most widely used automation server
   most documentation available
   often used for ci/ci/cd
-  runs jobs when triggered by a job
+  runs jobs when triggrunered by a job
   promotes pipelines as code
   has jenkins files
     jenkins files use Groovy inspired language
@@ -83,5 +83,83 @@ Rundeck is a tool for building self service run containers
   used for building self service automation
   can use rundeck to launch a awscli and run automation tasks
   has complicated web interface
+  can configure jobs via gui with JSON or YAML
 
 Everything as code - define everything in your application stack as code so your complete cloud infrastucture could be torn down and built from scratch automatically at a touch of a button. 
+
+Ansible - a versatile configuration management tool that aims to be easier and lightweight. 
+  Written in python and target host is Python
+  serverless and agentless
+  Playbooks - are listels of tasks in yaml format
+  Roles - are groups of tasks, and managed in playbooks
+  Modules and Plugins
+
+Terraform - most popular tool for creating infrastructure as code
+  cli utility for infra on cloud providers
+  .tf file extension
+  can write modules
+  ingress (inbound)
+  egress (outbound)
+  does not provide native functionality for elegant configuration management
+    should hand over provisioning to a configuration management tool after the bare infrastructure is running. 
+
+Chef - configuration management tool written in ruby
+  configuration files are called recipes and cookbooks written in ruby
+  can also do infrastructure as code
+  test Kitchen is a powerful testing suite for Chef (kitchen.ci)
+
+Puppet - Another configuration management tool.
+  Also uses ruby
+  Often used in master/agent model, but can be run as stand-alone locally. 
+  provides resource abstraction with Factor
+  .pp is puppet declarative language
+  classes - chunks of puppet code that can be called in manifests
+  modules - are collections of manifests and data such as templates. Nearly everything in Puppet configuration should be stored in modules. 
+
+Additional resources
+  Thank you for completing Get into DevOps: The Masterclass.
+
+  Please see additional learning material below, organized by the concepts and tools you've learned about.
+
+  Modern Environment Design
+  Ben Butler-Cole's ThoughtWorks blog posts on environment management in the cloud:
+
+  https://www.thoughtworks.com/insights/blog/rethinking-building-cloud-part-2-environments-cloud
+
+  https://www.thoughtworks.com/insights/blog/rethinking-building-cloud-part-3-principles-maximize-environments
+
+  https://www.thoughtworks.com/insights/blog/rethinking-building-cloud-part-4-immutable-servers
+
+  Cloud Platforms
+  Amazon Web Services official documentation: https://aws.amazon.com/documentation/
+
+  Google Cloud Platform official documentation: https://cloud.google.com/docs/
+
+  Microsoft Azure official documentation: https://docs.microsoft.com/en-us/azure/
+
+  Openstack official documentation: https://docs.openstack.org/
+
+  Containers & Container Orchestration
+  Docker official documentation: https://docs.docker.com/
+
+  Kubernetes official documentation: https://kubernetes.io/docs/home/
+
+  Rancher official documentation: http://rancher.com/docs/rancher/latest/en/
+
+  EC2 Container Service official documentation: https://aws.amazon.com/documentation/ecs/
+
+  Pipelines & Automation
+  Jenkins official documentation: https://jenkins.io/doc/
+
+  Gitlab CI official documentation: https://docs.gitlab.com/ce/ci/README.html
+
+  Rundeck official documentation: http://rundeck.org/docs/
+
+  Infrastructure as Code & Configuration Management
+  Ansible official documentation: http://docs.ansible.com/ansible/latest/index.html
+
+  Terraform official documentation: https://www.terraform.io/docs/index.html
+
+  Chef official documentation: https://docs.chef.io/
+
+  Puppet official documentation: https://puppet.com/docs/puppet/5.3/index.html
